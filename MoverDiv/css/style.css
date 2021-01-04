@@ -1,3 +1,7 @@
+body{
+    position: fixed;
+}
+
 body :first-child{
     width: 200px;
     height: 200px;
@@ -5,4 +9,6 @@ body :first-child{
     position: absolute;
     left: 0px;
     top: 0px;
+    background-image: unset;
+    border: 5px solid #000;
 }
