@@ -11,19 +11,23 @@ function moveDiv(event){
     // 39 = direita
     // 40 = baixo
 
-    // de acordo com a tecla é adicionado ou retirado 10px dentro do eixo x/y 
+    // de acordo com a tecla é adicionado ou retirado 10px dentro do eixo x/y, e a cor é alterada 
     if(tecla === 37){
-        eixoX -= 10;
+        eixoX -= 30;
         div1.style.left = eixoX + 'px';
+        div1.style.backgroundColor = 'green';
     } else if(tecla === 38) {
-        eixoY -= 10;
+        eixoY -= 30;
         div1.style.top = eixoY + 'px';
+        div1.style.backgroundColor = 'blue';
     } else if(tecla === 39) {
-        eixoX += 10;
+        eixoX += 30;
         div1.style.left = eixoX + 'px';
+        div1.style.backgroundColor = 'orange';
     } else if(tecla === 40) {
-        eixoY += 10;
+        eixoY += 30;
         div1.style.top = eixoY + 'px';
+        div1.style.backgroundColor = 'yellow';
     }
 }
 
