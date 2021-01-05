@@ -1,14 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body{
+    margin: 0px;
     position: fixed;
 }
 
 body :first-child{
     width: 200px;
     height: 200px;
-    background-color: red;
+    background-color:#fff;
     position: absolute;
     left: 0px;
     top: 0px;
     background-image: unset;
     border: 5px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
