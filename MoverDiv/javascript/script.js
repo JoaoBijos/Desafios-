@@ -21,22 +21,23 @@ function moveDiv(event){
         document.body.style.backgroundColor = 'red'
     } 
     else if(tecla === 38) {
-        girarPeca() 
+        girarPeca()
     } 
     else if(tecla === 39) {
         let validation = eixoX >= 0 && ((eixoX + ( piece / 2 )) - 20) <= width; // faz a validação para ver se a peça pode ir mais para a direita  
         eixoX = validation ? eixoX += 30 : width - 68;
-        console.log(eixoX)
         div1.style.left = eixoX + 'px';
         div1.style.backgroundColor = 'orange';
         document.body.style.backgroundColor = 'blue'
     } 
     else if(tecla === 40) {
-        eixoY += 30;
+        eixoY = (eixoY + 150) < 668 ? eixoY += 30 : innerHeight - 210;
+        console.log(eixoY)
         div1.style.top = eixoY + 'px';
         div1.style.backgroundColor = 'yellow';
         document.body.style.backgroundColor = 'purple'
     }
+
 
     function girarPeca(){
         rotate1 = rotate1 < 360 ? rotate1 += 90 : 0;
